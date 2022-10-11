@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D67061928F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */; };
+		3D67061B28F5CA1100A84692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061A28F5CA1100A84692 /* ContentView.swift */; };
+		3D67061D28F5CA1200A84692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D67061C28F5CA1200A84692 /* Assets.xcassets */; };
+		3D67062028F5CA1200A84692 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D67061F28F5CA1200A84692 /* Preview Assets.xcassets */; };
+		3D67062A28F5CA1200A84692 /* Dr_Gourmet_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67062928F5CA1200A84692 /* Dr_Gourmet_swiftUITests.swift */; };
+		3D67063428F5CA1200A84692 /* Dr_Gourmet_swiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67063328F5CA1200A84692 /* Dr_Gourmet_swiftUIUITests.swift */; };
+		3D67063628F5CA1200A84692 /* Dr_Gourmet_swiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67063528F5CA1200A84692 /* Dr_Gourmet_swiftUIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D67062628F5CA1200A84692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D67060D28F5CA1100A84692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D67061428F5CA1100A84692;
+			remoteInfo = Dr.Gourmet.swiftUI;
+		};
+		3D67063028F5CA1200A84692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D67060D28F5CA1100A84692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D67061428F5CA1100A84692;
+			remoteInfo = Dr.Gourmet.swiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D67061528F5CA1100A84692 /* Dr.Gourmet.swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dr.Gourmet.swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIApp.swift; sourceTree = "<group>"; };
+		3D67061A28F5CA1100A84692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D67061C28F5CA1200A84692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D67061F28F5CA1200A84692 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D67062528F5CA1200A84692 /* Dr.Gourmet.swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dr.Gourmet.swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D67062928F5CA1200A84692 /* Dr_Gourmet_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUITests.swift; sourceTree = "<group>"; };
+		3D67062F28F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dr.Gourmet.swiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D67063328F5CA1200A84692 /* Dr_Gourmet_swiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIUITests.swift; sourceTree = "<group>"; };
+		3D67063528F5CA1200A84692 /* Dr_Gourmet_swiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D67061228F5CA1100A84692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D67062228F5CA1200A84692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D67062C28F5CA1200A84692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D67060C28F5CA1100A84692 = {
+			isa = PBXGroup;
+			children = (
+				3D67061728F5CA1100A84692 /* Dr.Gourmet.swiftUI */,
+				3D67062828F5CA1200A84692 /* Dr.Gourmet.swiftUITests */,
+				3D67063228F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests */,
+				3D67061628F5CA1100A84692 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D67061628F5CA1100A84692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D67061528F5CA1100A84692 /* Dr.Gourmet.swiftUI.app */,
+				3D67062528F5CA1200A84692 /* Dr.Gourmet.swiftUITests.xctest */,
+				3D67062F28F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D67061728F5CA1100A84692 /* Dr.Gourmet.swiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */,
+				3D67061A28F5CA1100A84692 /* ContentView.swift */,
+				3D67061C28F5CA1200A84692 /* Assets.xcassets */,
+				3D67061E28F5CA1200A84692 /* Preview Content */,
+			);
+			path = Dr.Gourmet.swiftUI;
+			sourceTree = "<group>";
+		};
+		3D67061E28F5CA1200A84692 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D67061F28F5CA1200A84692 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D67062828F5CA1200A84692 /* Dr.Gourmet.swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D67062928F5CA1200A84692 /* Dr_Gourmet_swiftUITests.swift */,
+			);
+			path = Dr.Gourmet.swiftUITests;
+			sourceTree = "<group>";
+		};
+		3D67063228F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D67063328F5CA1200A84692 /* Dr_Gourmet_swiftUIUITests.swift */,
+				3D67063528F5CA1200A84692 /* Dr_Gourmet_swiftUIUITestsLaunchTests.swift */,
+			);
+			path = Dr.Gourmet.swiftUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D67061428F5CA1100A84692 /* Dr.Gourmet.swiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D67063928F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUI" */;
+			buildPhases = (
+				3D67061128F5CA1100A84692 /* Sources */,
+				3D67061228F5CA1100A84692 /* Frameworks */,
+				3D67061328F5CA1100A84692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dr.Gourmet.swiftUI;
+			productName = Dr.Gourmet.swiftUI;
+			productReference = 3D67061528F5CA1100A84692 /* Dr.Gourmet.swiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D67062428F5CA1200A84692 /* Dr.Gourmet.swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D67063C28F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUITests" */;
+			buildPhases = (
+				3D67062128F5CA1200A84692 /* Sources */,
+				3D67062228F5CA1200A84692 /* Frameworks */,
+				3D67062328F5CA1200A84692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D67062728F5CA1200A84692 /* PBXTargetDependency */,
+			);
+			name = Dr.Gourmet.swiftUITests;
+			productName = Dr.Gourmet.swiftUITests;
+			productReference = 3D67062528F5CA1200A84692 /* Dr.Gourmet.swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D67062E28F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D67063F28F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUIUITests" */;
+			buildPhases = (
+				3D67062B28F5CA1200A84692 /* Sources */,
+				3D67062C28F5CA1200A84692 /* Frameworks */,
+				3D67062D28F5CA1200A84692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D67063128F5CA1200A84692 /* PBXTargetDependency */,
+			);
+			name = Dr.Gourmet.swiftUIUITests;
+			productName = Dr.Gourmet.swiftUIUITests;
+			productReference = 3D67062F28F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D67060D28F5CA1100A84692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3D67061428F5CA1100A84692 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					3D67062428F5CA1200A84692 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 3D67061428F5CA1100A84692;
+					};
+					3D67062E28F5CA1200A84692 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 3D67061428F5CA1100A84692;
+					};
+				};
+			};
+			buildConfigurationList = 3D67061028F5CA1100A84692 /* Build configuration list for PBXProject "Dr.Gourmet.swiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D67060C28F5CA1100A84692;
+			productRefGroup = 3D67061628F5CA1100A84692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D67061428F5CA1100A84692 /* Dr.Gourmet.swiftUI */,
+				3D67062428F5CA1200A84692 /* Dr.Gourmet.swiftUITests */,
+				3D67062E28F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D67061328F5CA1100A84692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D67062028F5CA1200A84692 /* Preview Assets.xcassets in Resources */,
+				3D67061D28F5CA1200A84692 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D67062328F5CA1200A84692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D67062D28F5CA1200A84692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D67061128F5CA1100A84692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D67061B28F5CA1100A84692 /* ContentView.swift in Sources */,
+				3D67061928F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D67062128F5CA1200A84692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D67062A28F5CA1200A84692 /* Dr_Gourmet_swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D67062B28F5CA1200A84692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D67063628F5CA1200A84692 /* Dr_Gourmet_swiftUIUITestsLaunchTests.swift in Sources */,
+				3D67063428F5CA1200A84692 /* Dr_Gourmet_swiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D67062728F5CA1200A84692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D67061428F5CA1100A84692 /* Dr.Gourmet.swiftUI */;
+			targetProxy = 3D67062628F5CA1200A84692 /* PBXContainerItemProxy */;
+		};
+		3D67063128F5CA1200A84692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D67061428F5CA1100A84692 /* Dr.Gourmet.swiftUI */;
+			targetProxy = 3D67063028F5CA1200A84692 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D67063728F5CA1200A84692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D67063828F5CA1200A84692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D67063A28F5CA1200A84692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dr.Gourmet.swiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = WG887QB5A6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D67063B28F5CA1200A84692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dr.Gourmet.swiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = WG887QB5A6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D67063D28F5CA1200A84692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WG887QB5A6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dr.Gourmet.swiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dr.Gourmet.swiftUI";
+			};
+			name = Debug;
+		};
+		3D67063E28F5CA1200A84692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WG887QB5A6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dr.Gourmet.swiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dr.Gourmet.swiftUI";
+			};
+			name = Release;
+		};
+		3D67064028F5CA1200A84692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WG887QB5A6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dr.Gourmet.swiftUI;
+			};
+			name = Debug;
+		};
+		3D67064128F5CA1200A84692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WG887QB5A6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dr.Gourmet.swiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D67061028F5CA1100A84692 /* Build configuration list for PBXProject "Dr.Gourmet.swiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D67063728F5CA1200A84692 /* Debug */,
+				3D67063828F5CA1200A84692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D67063928F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D67063A28F5CA1200A84692 /* Debug */,
+				3D67063B28F5CA1200A84692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D67063C28F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D67063D28F5CA1200A84692 /* Debug */,
+				3D67063E28F5CA1200A84692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D67063F28F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D67064028F5CA1200A84692 /* Debug */,
+				3D67064128F5CA1200A84692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D67060D28F5CA1100A84692 /* Project object */;
+}

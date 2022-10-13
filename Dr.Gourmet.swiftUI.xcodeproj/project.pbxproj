@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03339ABB17648315AE5D3624 /* Pods_Dr_Gourmet_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF7FF70DEA53A433B62392F /* Pods_Dr_Gourmet_swiftUITests.framework */; };
+		3D1A978928F7103000731D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A978828F7103000731D45 /* AppDelegate.swift */; };
 		3D67061928F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */; };
-		3D67061B28F5CA1100A84692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061A28F5CA1100A84692 /* ContentView.swift */; };
+		3D67061B28F5CA1100A84692 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061A28F5CA1100A84692 /* HomeView.swift */; };
 		3D67061D28F5CA1200A84692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D67061C28F5CA1200A84692 /* Assets.xcassets */; };
 		3D67062028F5CA1200A84692 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D67061F28F5CA1200A84692 /* Preview Assets.xcassets */; };
 		3D67062A28F5CA1200A84692 /* Dr_Gourmet_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67062928F5CA1200A84692 /* Dr_Gourmet_swiftUITests.swift */; };
 		3D67063428F5CA1200A84692 /* Dr_Gourmet_swiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67063328F5CA1200A84692 /* Dr_Gourmet_swiftUIUITests.swift */; };
 		3D67063628F5CA1200A84692 /* Dr_Gourmet_swiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67063528F5CA1200A84692 /* Dr_Gourmet_swiftUIUITestsLaunchTests.swift */; };
+		3D67064328F5CA4600A84692 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67064228F5CA4600A84692 /* PlaceListView.swift */; };
+		3D67064528F5CAB600A84692 /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67064428F5CAB600A84692 /* PlaceListViewModel.swift */; };
+		3D67064828F5CD5600A84692 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67064728F5CD5600A84692 /* Place.swift */; };
+		3D67064B28F5D36A00A84692 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67064A28F5D36A00A84692 /* PlaceCell.swift */; };
+		3DB3CD2228F6733E0030F3A3 /* PlaceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3CD2128F6733E0030F3A3 /* PlaceDetailViewModel.swift */; };
+		3DB3CD2428F674CF0030F3A3 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3CD2328F674CF0030F3A3 /* PlaceDetailView.swift */; };
+		3DB3CD2728F692100030F3A3 /* NewPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3CD2628F692100030F3A3 /* NewPlaceView.swift */; };
+		3DB3CD2928F695060030F3A3 /* NewPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3CD2828F695060030F3A3 /* NewPlaceModel.swift */; };
+		3DB3CD2C28F6AA6B0030F3A3 /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3CD2B28F6AA6B0030F3A3 /* StarButton.swift */; };
+		A75D2A2BEEAB5970BDED0363 /* Pods_Dr_Gourmet_swiftUI_Dr_Gourmet_swiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8EA94E5260AC10217D0FBA /* Pods_Dr_Gourmet_swiftUI_Dr_Gourmet_swiftUIUITests.framework */; };
+		EDFAD697D106BD08D5CE9332 /* Pods_Dr_Gourmet_swiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E00AB54C7B1190469FB3F7 /* Pods_Dr_Gourmet_swiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29693C5A3DDAFE2AF04970DC /* Pods-Dr.Gourmet.swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUITests/Pods-Dr.Gourmet.swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D1A978828F7103000731D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D67061528F5CA1100A84692 /* Dr.Gourmet.swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dr.Gourmet.swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIApp.swift; sourceTree = "<group>"; };
-		3D67061A28F5CA1100A84692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D67061A28F5CA1100A84692 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3D67061C28F5CA1200A84692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D67061F28F5CA1200A84692 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D67062528F5CA1200A84692 /* Dr.Gourmet.swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dr.Gourmet.swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +59,23 @@
 		3D67062F28F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dr.Gourmet.swiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D67063328F5CA1200A84692 /* Dr_Gourmet_swiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIUITests.swift; sourceTree = "<group>"; };
 		3D67063528F5CA1200A84692 /* Dr_Gourmet_swiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D67064228F5CA4600A84692 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
+		3D67064428F5CAB600A84692 /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
+		3D67064728F5CD5600A84692 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		3D67064A28F5D36A00A84692 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		3DB3CD2128F6733E0030F3A3 /* PlaceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewModel.swift; sourceTree = "<group>"; };
+		3DB3CD2328F674CF0030F3A3 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		3DB3CD2628F692100030F3A3 /* NewPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceView.swift; sourceTree = "<group>"; };
+		3DB3CD2828F695060030F3A3 /* NewPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceModel.swift; sourceTree = "<group>"; };
+		3DB3CD2B28F6AA6B0030F3A3 /* StarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		3EF184D626141D4605A752E0 /* Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		440A3655FECAA7E04F0EE939 /* Pods-Dr.Gourmet.swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUITests/Pods-Dr.Gourmet.swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AE4A59E92CFE0A96DE3FB8A /* Pods-Dr.Gourmet.swiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUI.release.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		5F9E1ABD8D93DBEEAC0080CC /* Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91E00AB54C7B1190469FB3F7 /* Pods_Dr_Gourmet_swiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dr_Gourmet_swiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF7FF70DEA53A433B62392F /* Pods_Dr_Gourmet_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dr_Gourmet_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA8EA94E5260AC10217D0FBA /* Pods_Dr_Gourmet_swiftUI_Dr_Gourmet_swiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dr_Gourmet_swiftUI_Dr_Gourmet_swiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE74C50372B3155A10702F9C /* Pods-Dr.Gourmet.swiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFAD697D106BD08D5CE9332 /* Pods_Dr_Gourmet_swiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03339ABB17648315AE5D3624 /* Pods_Dr_Gourmet_swiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +99,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75D2A2BEEAB5970BDED0363 /* Pods_Dr_Gourmet_swiftUI_Dr_Gourmet_swiftUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A83013EB94CD4F8D5CD3D17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE74C50372B3155A10702F9C /* Pods-Dr.Gourmet.swiftUI.debug.xcconfig */,
+				4AE4A59E92CFE0A96DE3FB8A /* Pods-Dr.Gourmet.swiftUI.release.xcconfig */,
+				3EF184D626141D4605A752E0 /* Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig */,
+				5F9E1ABD8D93DBEEAC0080CC /* Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.release.xcconfig */,
+				440A3655FECAA7E04F0EE939 /* Pods-Dr.Gourmet.swiftUITests.debug.xcconfig */,
+				29693C5A3DDAFE2AF04970DC /* Pods-Dr.Gourmet.swiftUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3D67060C28F5CA1100A84692 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +126,8 @@
 				3D67062828F5CA1200A84692 /* Dr.Gourmet.swiftUITests */,
 				3D67063228F5CA1200A84692 /* Dr.Gourmet.swiftUIUITests */,
 				3D67061628F5CA1100A84692 /* Products */,
+				0A83013EB94CD4F8D5CD3D17 /* Pods */,
+				986238E973979017B9712A69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +145,12 @@
 			isa = PBXGroup;
 			children = (
 				3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */,
-				3D67061A28F5CA1100A84692 /* ContentView.swift */,
+				3D1A978828F7103000731D45 /* AppDelegate.swift */,
+				3D67061A28F5CA1100A84692 /* HomeView.swift */,
+				3D67064628F5CB0C00A84692 /* Place List */,
+				3DB3CD2A28F6950A0030F3A3 /* Place Creation */,
+				3DB3CD2528F675310030F3A3 /* Place Detail */,
+				3D67064928F5CDB500A84692 /* Model */,
 				3D67061C28F5CA1200A84692 /* Assets.xcassets */,
 				3D67061E28F5CA1200A84692 /* Preview Content */,
 			);
@@ -127,6 +182,53 @@
 			path = Dr.Gourmet.swiftUIUITests;
 			sourceTree = "<group>";
 		};
+		3D67064628F5CB0C00A84692 /* Place List */ = {
+			isa = PBXGroup;
+			children = (
+				3D67064228F5CA4600A84692 /* PlaceListView.swift */,
+				3D67064A28F5D36A00A84692 /* PlaceCell.swift */,
+				3D67064428F5CAB600A84692 /* PlaceListViewModel.swift */,
+			);
+			path = "Place List";
+			sourceTree = "<group>";
+		};
+		3D67064928F5CDB500A84692 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D67064728F5CD5600A84692 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DB3CD2528F675310030F3A3 /* Place Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3DB3CD2128F6733E0030F3A3 /* PlaceDetailViewModel.swift */,
+				3DB3CD2328F674CF0030F3A3 /* PlaceDetailView.swift */,
+			);
+			path = "Place Detail";
+			sourceTree = "<group>";
+		};
+		3DB3CD2A28F6950A0030F3A3 /* Place Creation */ = {
+			isa = PBXGroup;
+			children = (
+				3DB3CD2628F692100030F3A3 /* NewPlaceView.swift */,
+				3DB3CD2B28F6AA6B0030F3A3 /* StarButton.swift */,
+				3DB3CD2828F695060030F3A3 /* NewPlaceModel.swift */,
+			);
+			path = "Place Creation";
+			sourceTree = "<group>";
+		};
+		986238E973979017B9712A69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91E00AB54C7B1190469FB3F7 /* Pods_Dr_Gourmet_swiftUI.framework */,
+				BA8EA94E5260AC10217D0FBA /* Pods_Dr_Gourmet_swiftUI_Dr_Gourmet_swiftUIUITests.framework */,
+				9CF7FF70DEA53A433B62392F /* Pods_Dr_Gourmet_swiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D67063928F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUI" */;
 			buildPhases = (
+				2ECBEED067BAC6671BB1F335 /* [CP] Check Pods Manifest.lock */,
 				3D67061128F5CA1100A84692 /* Sources */,
 				3D67061228F5CA1100A84692 /* Frameworks */,
 				3D67061328F5CA1100A84692 /* Resources */,
+				FB6B303711878B599C1B39C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D67063C28F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUITests" */;
 			buildPhases = (
+				5FC92B6BD63B39E550C2F5B1 /* [CP] Check Pods Manifest.lock */,
 				3D67062128F5CA1200A84692 /* Sources */,
 				3D67062228F5CA1200A84692 /* Frameworks */,
 				3D67062328F5CA1200A84692 /* Resources */,
@@ -169,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D67063F28F5CA1200A84692 /* Build configuration list for PBXNativeTarget "Dr.Gourmet.swiftUIUITests" */;
 			buildPhases = (
+				B7171905281E4755314C294F /* [CP] Check Pods Manifest.lock */,
 				3D67062B28F5CA1200A84692 /* Sources */,
 				3D67062C28F5CA1200A84692 /* Frameworks */,
 				3D67062D28F5CA1200A84692 /* Resources */,
+				18236DF9302EC2116EC2E8F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,13 +359,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18236DF9302EC2116EC2E8F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ECBEED067BAC6671BB1F335 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dr.Gourmet.swiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC92B6BD63B39E550C2F5B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dr.Gourmet.swiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7171905281E4755314C294F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6B303711878B599C1B39C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D67061128F5CA1100A84692 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D67061B28F5CA1100A84692 /* ContentView.swift in Sources */,
+				3D1A978928F7103000731D45 /* AppDelegate.swift in Sources */,
+				3D67064528F5CAB600A84692 /* PlaceListViewModel.swift in Sources */,
+				3DB3CD2228F6733E0030F3A3 /* PlaceDetailViewModel.swift in Sources */,
+				3DB3CD2928F695060030F3A3 /* NewPlaceModel.swift in Sources */,
+				3DB3CD2728F692100030F3A3 /* NewPlaceView.swift in Sources */,
+				3D67064328F5CA4600A84692 /* PlaceListView.swift in Sources */,
+				3DB3CD2428F674CF0030F3A3 /* PlaceDetailView.swift in Sources */,
+				3D67061B28F5CA1100A84692 /* HomeView.swift in Sources */,
 				3D67061928F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift in Sources */,
+				3D67064828F5CD5600A84692 /* Place.swift in Sources */,
+				3D67064B28F5D36A00A84692 /* PlaceCell.swift in Sources */,
+				3DB3CD2C28F6AA6B0030F3A3 /* StarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +631,7 @@
 		};
 		3D67063A28F5CA1200A84692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE74C50372B3155A10702F9C /* Pods-Dr.Gourmet.swiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +661,7 @@
 		};
 		3D67063B28F5CA1200A84692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE4A59E92CFE0A96DE3FB8A /* Pods-Dr.Gourmet.swiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +691,7 @@
 		};
 		3D67063D28F5CA1200A84692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440A3655FECAA7E04F0EE939 /* Pods-Dr.Gourmet.swiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +712,7 @@
 		};
 		3D67063E28F5CA1200A84692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29693C5A3DDAFE2AF04970DC /* Pods-Dr.Gourmet.swiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,8 +733,9 @@
 		};
 		3D67064028F5CA1200A84692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF184D626141D4605A752E0 /* Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WG887QB5A6;
@@ -527,8 +752,9 @@
 		};
 		3D67064128F5CA1200A84692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F9E1ABD8D93DBEEAC0080CC /* Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WG887QB5A6;

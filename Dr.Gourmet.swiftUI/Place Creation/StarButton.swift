@@ -9,26 +9,35 @@ import SwiftUI
 import RealmSwift
 
 struct StarButton: View {
-    @ObservedObject var vm: NewPlaceModel
+    @Binding var star: Int
     
-    var index: Int
+    var offImage: Image?
+    var onImage = Image(systemName: "star.fill")
     
     var body: some View {
         
-        Button {
-            vm.star = index
-        } label: {
-            Image(systemName: vm.star > index ? "star.fill" : "star")
-                .foregroundColor(vm.star > index ? Color.yellow : Color.gray.opacity(0.6))
+        HStack {
+            ForEach(1..<6, id: \.self) { number in
+                image(for: number)
+                    .foregroundColor(number > star ? Color.gray.opacity(0.8) : Color.yellow)
+                    .onTapGesture {
+                        star = number
+                    }
+            }
         }
-        
-
-        
+    }
+    
+    func image(for number: Int) -> Image {
+        if number > star {
+            return offImage ?? onImage
+        } else {
+            return onImage
+        }
     }
 }
 
 struct StarButton_Previews: PreviewProvider {
     static var previews: some View {
-        StarButton(vm: NewPlaceModel(places: .constant([])), index: 0)
+        StarButton(star: .constant(1))
     }
 }

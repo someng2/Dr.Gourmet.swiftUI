@@ -49,6 +49,7 @@
 /* Begin PBXFileReference section */
 		29693C5A3DDAFE2AF04970DC /* Pods-Dr.Gourmet.swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUITests/Pods-Dr.Gourmet.swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D1A978828F7103000731D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D4827FB28F7F5CB0079F67E /* Dr.Gourmet.swiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dr.Gourmet.swiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
 		3D67061528F5CA1100A84692 /* Dr.Gourmet.swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dr.Gourmet.swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIApp.swift; sourceTree = "<group>"; };
 		3D67061A28F5CA1100A84692 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		3DB3CD2628F692100030F3A3 /* NewPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceView.swift; sourceTree = "<group>"; };
 		3DB3CD2828F695060030F3A3 /* NewPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceModel.swift; sourceTree = "<group>"; };
 		3DB3CD2B28F6AA6B0030F3A3 /* StarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		3DF7D5B528FBDCB00046ACCC /* Dr-Gourmet-swiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Dr-Gourmet-swiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3EF184D626141D4605A752E0 /* Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		440A3655FECAA7E04F0EE939 /* Pods-Dr.Gourmet.swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUITests/Pods-Dr.Gourmet.swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AE4A59E92CFE0A96DE3FB8A /* Pods-Dr.Gourmet.swiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUI.release.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		3D67061728F5CA1100A84692 /* Dr.Gourmet.swiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3DF7D5B528FBDCB00046ACCC /* Dr-Gourmet-swiftUI-Info.plist */,
 				3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */,
 				3D1A978828F7103000731D45 /* AppDelegate.swift */,
 				3D67061A28F5CA1100A84692 /* HomeView.swift */,
@@ -153,6 +156,7 @@
 				3D67064928F5CDB500A84692 /* Model */,
 				3D67061C28F5CA1200A84692 /* Assets.xcassets */,
 				3D67061E28F5CA1200A84692 /* Preview Content */,
+				3D4827FB28F7F5CB0079F67E /* Dr.Gourmet.swiftUI-Bridging-Header.h */,
 			);
 			path = Dr.Gourmet.swiftUI;
 			sourceTree = "<group>";
@@ -302,6 +306,7 @@
 				TargetAttributes = {
 					3D67061428F5CA1100A84692 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					3D67062428F5CA1200A84692 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -635,12 +640,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dr.Gourmet.swiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = WG887QB5A6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dr-Gourmet-swiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -654,6 +661,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Dr.Gourmet.swiftUI/Dr.Gourmet.swiftUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -665,12 +674,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dr.Gourmet.swiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = WG887QB5A6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dr-Gourmet-swiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -684,6 +695,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Dr.Gourmet.swiftUI/Dr.Gourmet.swiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

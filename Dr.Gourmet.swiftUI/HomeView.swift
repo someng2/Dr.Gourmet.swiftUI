@@ -17,15 +17,25 @@ struct HomeView: View {
                 PlaceListView(vm: vm)
                     .tabItem {
                         Image(systemName: "house")
-                        Text("홈")
+//                        Text("홈")
                     }
                 NewPlaceView(vm: NewPlaceModel(places: $vm.places))
                     .tabItem {
-                        Image(systemName: "plus")
+                        Image(systemName: "plus.app.fill")
+                    }
+                Text("설정 페이지")
+                    .tabItem {
+                        Image(systemName: "gearshape")
                     }
             }
+            .accentColor(Color("NavigationBarColor"))
             .navigationTitle(("쩝쩝박사"))
             .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(
+                Color("NavigationBarColor"),
+                for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+                    
         }
     }
 }

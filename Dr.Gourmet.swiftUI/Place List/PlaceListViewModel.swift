@@ -35,7 +35,6 @@ final class PlaceListViewModel: ObservableObject {
     }
     
     func getPlaceData(){
-        
         let savedPlace = realm.objects(Place.self)        
         
         try! realm.write {

@@ -10,7 +10,7 @@ import SwiftUI
 
 @main
 struct Dr_Gourmet_swiftUIApp: App {
-//    @UIApplicationDelegateAdaptor var delegate: MyAppDelegate
+    @UIApplicationDelegateAdaptor var delegate: MyAppDelegate
     
     var body: some Scene {
         WindowGroup {

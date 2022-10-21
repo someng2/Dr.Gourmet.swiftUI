@@ -22,10 +22,14 @@ final class NewPlaceModel: ObservableObject {
     @Published var review: String  = ""// 한줄평
     @Published var menu: String = ""
     
+//    @Published var showingPopup: Bool = false
+    @Binding var tabSelection: Int
+    
     var subscriptions = Set<AnyCancellable>()
     
-    init(places: Binding<[Place]>) {
+    init(places: Binding<[Place]>, tabSelection: Binding<Int>) {
         self.places = places
+        self._tabSelection = tabSelection
         
         $name.sink { name in
             self.update(name: name)
@@ -51,6 +55,10 @@ final class NewPlaceModel: ObservableObject {
             self.update(menu: menu)
         }.store(in: &subscriptions)
         
+//        $showingPopup.sink { showingPopup in
+//            self.showingPopup = showingPopup
+//            print("---> showingPopup = \(showingPopup)")
+//        }.store(in: &subscriptions)
     }
     
     private func update(name: String) {
@@ -77,7 +85,28 @@ final class NewPlaceModel: ObservableObject {
         self.place.menu = menu
     }
     
+    // 세로 이미지 회전 문제로 인한 함수
+    
+    func fixOrientation(img: UIImage) -> UIImage {
+        
+        if (img.imageOrientation == .up) {
+            return img
+        }
+
+        UIGraphicsBeginImageContextWithOptions(img.size, false, img.scale)
+        let rect = CGRect(x: 0, y: 0, width: img.size.width, height: img.size.height)
+        img.draw(in: rect)
+        
+        let normalizedImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        return normalizedImage
+        
+    }
+    
     func saveImageToDocumentDirectory(imageName: String, image: UIImage) {
+        let fixedImage = fixOrientation(img: image)
+        
         // 1. 이미지를 저장할 경로를 설정해줘야함 - 도큐먼트 폴더,File 관련된건 Filemanager가 관리함(싱글톤 패턴)
         guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {return}
         
@@ -86,7 +115,7 @@ final class NewPlaceModel: ObservableObject {
         
         // 3. 이미지 압축(image.pngData())
         // 압축할거면 jpegData로~(0~1 사이 값)
-        guard let data = image.pngData() else {
+        guard let data = fixedImage.pngData() else {
             print("압축이 실패했습니다.")
             return
         }
@@ -114,8 +143,12 @@ final class NewPlaceModel: ObservableObject {
     }
     
     func save(imageData: Data) {
-        
-        guard place.name.isEmpty == false else { return }
+        if place.name.isEmpty {
+//            showingPopup = true
+           
+            return
+        }
+//        guard place.name.isEmpty == false else { return }
         guard place.area.isEmpty == false else { return }
         
         let formatter = DateFormatter()
@@ -123,7 +156,7 @@ final class NewPlaceModel: ObservableObject {
         self.place.regDate = formatter.string(from: Date())
         print("---> current time: \(place.regDate)")
         places.wrappedValue.append(place)
-
+        
         do {
             try realm.write{
                 realm.add(place)
@@ -134,9 +167,10 @@ final class NewPlaceModel: ObservableObject {
         } catch let error{
             print("*** NewPlaceModel realm error: \(error)")
         }
-
+        
         place = Place()
         eraseForm()
+        tabSelection = 1
     }
     
     private func eraseForm() {

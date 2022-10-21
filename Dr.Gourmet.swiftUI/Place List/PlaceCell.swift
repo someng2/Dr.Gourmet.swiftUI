@@ -16,27 +16,26 @@ struct PlaceCell: View {
             Image(uiImage: image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 120, height: 180)
-                .blur(radius: 1)
-                .cornerRadius(20.0)
-                .clipped()
-                .opacity(0.8)
+                .frame(width: 165, height: 165)
+                .overlay(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6536279966)), Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0))]), startPoint: .bottom, endPoint: .top))
                 .overlay(
                     Text(place.name)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.black),
+                        .foregroundColor(Color.white)
+                        .font(.custom("NanumSquareEB", size: 18))
+                    ,
                     alignment: .center
                 )
+                .cornerRadius(15.0)
         } else {
 
             ZStack {
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(Color.gray.opacity(0.8))
-                    .frame(width: 120, height: 180)
+                RoundedRectangle(cornerRadius: 15)
+                    .foregroundColor(Color("DividerColor"))
+                    .frame(width: 165, height: 165)
 
                 Text(place.name)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color("LabelColor"))
+                    .font(.custom("NanumSquareB", size: 18))
             }
             
         }

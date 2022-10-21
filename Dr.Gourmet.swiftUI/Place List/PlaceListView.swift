@@ -46,7 +46,7 @@ struct PlaceListView: View {
                             } label: {
                                 HStack(spacing: 0) {
                                     Text(key)
-                                        .font(.system(size: 17, weight: .black))
+                                        .font(.custom("HancomMalangMalang-Bold", size: 19))
                                         .padding(10)
                                     Image(systemName: "chevron.right")
                                 }.foregroundColor(Color.black)

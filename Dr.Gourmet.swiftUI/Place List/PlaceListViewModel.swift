@@ -38,6 +38,7 @@ final class PlaceListViewModel: ObservableObject {
         let savedPlace = realm.objects(Place.self)        
         
         try! realm.write {
+//            print("---> getPlaceData: \(savedPlace)")
 //            print("---> getSavedData: \(savedPlace.compactMap({$0}))")
             self.places = savedPlace.compactMap({$0})
         }

@@ -44,7 +44,6 @@ final class PlaceDetailViewModel: ObservableObject {
     }
     
     func deletePlaceData() {
-        
         let predicate = NSPredicate(format: "id == %@", place.id as CVarArg)
         if let filteredData = realm.objects(Place.self).filter(predicate).first {
 //            print("---> filteredData: \(filteredData)")
@@ -53,6 +52,7 @@ final class PlaceDetailViewModel: ObservableObject {
             }
         }
         
+        // place instance 초기화 -> 에러 해결
         place = Place()
         
     }

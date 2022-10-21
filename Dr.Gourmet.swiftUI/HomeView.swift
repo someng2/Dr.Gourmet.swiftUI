@@ -10,32 +10,47 @@ import SwiftUI
 struct HomeView: View {
     
     @StateObject var vm: PlaceListViewModel
+    @State private var tabSelection = 1
     
     var body: some View {
         NavigationView {
-            TabView {
+            TabView(selection: $tabSelection) {
                 PlaceListView(vm: vm)
                     .tabItem {
                         Image(systemName: "house")
-//                        Text("홈")
                     }
-                NewPlaceView(vm: NewPlaceModel(places: $vm.places))
+                    .tag(1)
+                NewPlaceView(vm: NewPlaceModel(places: $vm.places, tabSelection: $tabSelection
+//                                               , showingPopup: false)
+                ))
                     .tabItem {
                         Image(systemName: "plus.app.fill")
                     }
+                    .tag(2)
                 Text("설정 페이지")
                     .tabItem {
                         Image(systemName: "gearshape")
                     }
             }
-            .accentColor(Color("NavigationBarColor"))
-            .navigationTitle(("쩝쩝박사"))
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HStack(alignment: .center) {
+                        Text("쩝쩝").font(.custom("Jalnan", size: 20))
+                        Image("circleAppLogo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxHeight: .infinity)
+                        Text("박사").font(.custom("Jalnan", size: 20))
+                    }.padding(EdgeInsets(top: 0, leading: 0, bottom: 2, trailing: 0))
+                }
+            }
+            .accentColor(Color("PrimaryColor"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(
-                Color("NavigationBarColor"),
+                Color("PrimaryColor"),
                 for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
-                    
+            
         }
     }
 }

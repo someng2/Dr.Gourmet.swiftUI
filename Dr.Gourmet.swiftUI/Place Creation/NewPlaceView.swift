@@ -8,6 +8,7 @@
 import SwiftUI
 import RealmSwift
 import PhotosUI
+import AlertMessage
 
 struct NewPlaceView: View {
     
@@ -16,8 +17,10 @@ struct NewPlaceView: View {
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
     
-    @State private var starClicked: [Bool] = [false, false, false, false, false]
-    @FocusState var focused: Bool
+    @FocusState var nameFocused: Bool
+    @FocusState var areaFocused: Bool
+    @State var showNameSnackbar: Bool = false
+    @State var showAreaSnackbar: Bool = false
     
     var body: some View {
         VStack {
@@ -26,30 +29,37 @@ struct NewPlaceView: View {
                     TextField("", text: $vm.name)
                 } header: {
                     Text("상호명")
+                        .font(.custom("NanumSquareB", size: 14))
                 }
-                .focused($focused)
+                .focused($nameFocused)
                 Section {
                     TextField("", text: $vm.area)
                 } header: {
                     Text("지역 (ex: 서울, 대전)")
+                        .font(.custom("NanumSquareB", size: 14))
                 }.textCase(nil)
+                    .focused($areaFocused)
                 Section {
                     TextField("", text: $vm.address)
                 } header: {
                     Text("주소")
+                        .font(.custom("NanumSquareB", size: 14))
                 }
                 
                 Section {
                     TextField("", text: $vm.menu)
-                        .frame(height: 60)
+                        .frame(height: 60, alignment: .top)
+                    
                 } header: {
-                    Text("추천메뉴")
+                    Text("기억에 남는 메뉴")
+                        .font(.custom("NanumSquareB", size: 14))
                 }
                 
                 Section {
                     StarButton(star: $vm.star)
                 } header: {
                     Text("별점")
+                        .font(.custom("NanumSquareB", size: 14))
                 }
                 
                 Section {
@@ -59,6 +69,7 @@ struct NewPlaceView: View {
                     
                 } header: {
                     Text("한줄평")
+                        .font(.custom("NanumSquareB", size: 14))
                 }
                 
                 
@@ -74,9 +85,8 @@ struct NewPlaceView: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(height: 18)
-                                    Text("갤러리에서 선택하기")
-                                        .font(.system(
-                                            size: 13))
+                                    Text("갤러리에서 선택")
+                                        .font(.custom("NanumSquareB", size: 13))
                                 }.foregroundColor(Color("SecondaryGreen"))
                             }.onChange(of: selectedItem) { newItem in
                                 Task {
@@ -92,44 +102,106 @@ struct NewPlaceView: View {
                     
                     if let selectedImageData,
                        let uiImage = UIImage(data: selectedImageData) {
-                        Image(uiImage: uiImage)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 230, alignment: .center)
+                        HStack {
+                            Spacer()
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .scaledToFit()
+                                .cornerRadius(15)
+                                .frame(height: 230, alignment: .center)
+                            
+                            Spacer()
+                        }
                     }
                     
                 } header: {
                     VStack(alignment: .leading) {
-                        Text("맛있게 먹은 사진을 올려주세요! ")
-                            .font(.system(
-                                size: 13, weight: .semibold))
-                        
+                        Text("맛있게 먹은 사진을 올려주세요!")
+                            .font(.custom("NanumSquareB", size: 14))
                     }
                 }
+                Section {
+                    HStack {
+                        Spacer()
+                        Button{
+                            if $vm.name.wrappedValue.isEmpty {
+                                showNameSnackbar = true
+                                areaFocused = false
+                                nameFocused = true
+                            }
+                            else if $vm.area.wrappedValue.isEmpty {
+                                showAreaSnackbar = true
+                                nameFocused = false
+                                areaFocused = true
+                            }
+                            else {
+                                vm.save(imageData: selectedImageData ?? Data())
+                                selectedImageData = Data()
+                                nameFocused = true
+                                //  self.tabSelection = 1
+                            }
+                            
+                        } label: {
+                            Text("저장")
+                                .font(.custom("NanumSquareB", size: 18))
+                                .foregroundColor(Color.white)
+                                .frame(width: 270, height: 60)
+                                .background(Color("SecondaryGreen"))
+                                .cornerRadius(30)
+                        }
+                        Spacer()
+                    }
+                    
+                }
+                .listRowBackground(Color(UIColor.clear))
+                .background(.clear)
                 
+                
+            }
+            .alertMessage(isPresented: $showNameSnackbar, type: .centered, autoHideIn: 1.5) {
+                VStack {
+                    Image(systemName: "exclamationmark.octagon")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.white)
+                        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
+                            
+                    Text("상호명을 입력해주세요!")
+                        .font(.custom("NanumSquareR", size: 16))
+                         .foregroundColor(.white)
+                    Spacer()
+                 }
+                
+                .frame(width: 240, height: 90)
+                .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
+                .background(Color("SecondaryOrange"))
+                .cornerRadius(30)
+            }
+            .alertMessage(isPresented: $showAreaSnackbar, type: .centered, autoHideIn: 1.5) {
+                VStack {
+                    Image(systemName: "exclamationmark.octagon")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.white)
+                        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
+                            
+                    Text("지역을 입력해주세요!")
+                        .font(.custom("NanumSquareR", size: 16))
+                         .foregroundColor(.white)
+                    Spacer()
+                 }
+                
+                .frame(width: 240, height: 90)
+                .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
+                .background(Color("SecondaryOrange"))
+                .cornerRadius(30)
             }
             .foregroundColor(Color("LabelColor"))
             .scrollContentBackground(.hidden)
             Spacer()
-            Button{
-                vm.save(imageData: selectedImageData ?? Data())
-                selectedImageData = Data()
-                focused = true
-                
-            } label: {
-                Text("저장")
-                    .frame(width: 200, height: 60)
-                    .foregroundColor(Color.white)
-                    .background(Color.pink)
-                    .cornerRadius(30)
-            }.padding(0)
-            Spacer()
-        }
-        .onAppear{
-            focused = true
-            
-        }
-        .background(Color.gray.opacity(0.2))
+        }.onAppear{
+            nameFocused = true
+        }.background(Color.gray.opacity(0.2))
     }
 }
 
@@ -141,7 +213,8 @@ extension View {
 
 struct NewPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        NewPlaceView(vm: NewPlaceModel(places: .constant([]))
+        NewPlaceView(vm: NewPlaceModel(places: .constant([]), tabSelection: .constant(2)
+                                      )
                      
         )
     }

@@ -18,12 +18,16 @@ struct PlaceDetailView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     if (vm.loadImageFromDocumentDirectory(imageName: "\(vm.place.id).png") != nil) {
-                        Image(uiImage: vm.loadImageFromDocumentDirectory(imageName: "\(vm.place.id).png")!)
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(15)
-                            .frame(height: 230)
-                            .padding(EdgeInsets(top: 35, leading: 35, bottom: 0, trailing: 35))
+                        HStack {
+                            Spacer()
+                            Image(uiImage: vm.loadImageFromDocumentDirectory(imageName: "\(vm.place.id).png")!)
+                                .resizable()
+                                .scaledToFit()
+                                .cornerRadius(15)
+                                .frame(height: 230, alignment: .center)
+                                .padding(EdgeInsets(top: 35, leading: 35, bottom: 0, trailing: 35))
+                            Spacer()
+                        }
                     }
                     else {
                         // TODO: 이미지 없을 경우
@@ -52,9 +56,9 @@ struct PlaceDetailView: View {
                                 .foregroundColor(Color("LabelColor"))
                                 .frame(width: 17)
                             
-                            Spacer().frame(width: 10)
+                            Spacer().frame(width: 15)
                             Text(vm.place.address)
-                                .font(.system(size: 15))
+                                .font(.custom("NanumSquareR", size: 16))
                                 .foregroundColor(Color("LabelColor"))
                         }.padding(.leading, 20)
                         Divider().foregroundColor(Color("DividerColor")).padding(EdgeInsets(top: 15, leading: 0, bottom: 15, trailing: 0))
@@ -66,15 +70,16 @@ struct PlaceDetailView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color("SecondaryOrange"))
-                                    .frame(width: 22)
+                                    .frame(width: 23)
+                                Spacer().frame(width: 13)
                                 Text("추천 메뉴")
-                                    .font(.system(size: 18, weight: .bold))
+                                    .font(.custom("HancomMalangMalang-Bold", size: 17))
                                     .frame(alignment: .leading)
                             }
                             Spacer().frame(height: 15)
                             Text(vm.place.menu)
-                                .font(.system(size: 15))
-                                .padding(.leading, 30)
+                                .font(.custom("NanumSquareR", size: 15))
+                                .padding(.leading, 36)
                             Spacer().frame(height: 30)
                         }
                         if vm.place.review != "" {
@@ -83,16 +88,17 @@ struct PlaceDetailView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color("SecondaryOrange"))
-                                    .frame(width: 22)
+                                    .frame(width: 23)
+                                Spacer().frame(width: 13)
                                 Text("리뷰")
-                                    .font(.system(size: 18, weight: .bold))
+                                    .font(.custom("HancomMalangMalang-Bold", size: 17))
                             }
                             
                             Spacer().frame(height: 15)
                             
-                            Text("이거슨 리뷰~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-                                .font(.system(size: 15))
-                                .padding(.leading, 30)
+                            Text(vm.place.review)
+                                .font(.custom("NanumSquareR", size: 15))
+                                .padding(.leading, 36)
                         }
                     }.padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 30))
                 }.foregroundColor(Color("LabelColor"))
@@ -104,8 +110,8 @@ struct PlaceDetailView: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text(vm.place.name)
-                            .bold()
+                        Text("📍 \(vm.place.name)")
+                            .font(.custom("HancomMalangMalang-Bold", size: 19))
                             .foregroundColor(Color.black)
                     }
                 }
@@ -113,16 +119,17 @@ struct PlaceDetailView: View {
             Spacer()
             HStack {
                 Spacer()
-                Text("최근 수정일:")
+                Text("등록일:")
                 Text(vm.filterDate(vm.place.regDate))
                 Spacer()
                 
             }.foregroundColor(Color("LightGray"))
                 .frame(alignment: .center)
-                .font(.system(size: 12))
+                .font(.custom("NanumSquareR", size: 12))
+                .padding(.bottom, 10)
             
         }.toolbarBackground(
-            Color("NavigationBarColor"),
+            Color("PrimaryColor"),
             for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
         .navigationBarBackButtonHidden(true)
@@ -136,7 +143,7 @@ struct PlaceDetailView: View {
                 Image(systemName: "chevron.backward")
                     .aspectRatio(contentMode: .fit)
                     .foregroundColor(.white)
-                
+                    .frame(height: 40)
             }
     }
     
@@ -145,7 +152,7 @@ struct PlaceDetailView: View {
             presentPopup = true
         }
         .foregroundColor(.white)
-        .font(.system(size: 18))
+        .font(.custom("NanumSquareB", size: 16))
         .sheet(isPresented: $presentPopup) {
             VStack {
                 Spacer()

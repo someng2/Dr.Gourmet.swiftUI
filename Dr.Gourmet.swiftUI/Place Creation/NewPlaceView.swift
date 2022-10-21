@@ -27,51 +27,55 @@ struct NewPlaceView: View {
             Form {
                 Section {
                     TextField("", text: $vm.name)
+                        .font(.custom("NanumSquareR", size: 15))
                 } header: {
                     Text("상호명")
-                        .font(.custom("NanumSquareB", size: 14))
+                        .font(.custom("NanumSquareB", size: 15))
                 }
                 .focused($nameFocused)
                 Section {
                     TextField("", text: $vm.area)
+                        .font(.custom("NanumSquareR", size: 15))
                 } header: {
                     Text("지역 (ex: 서울, 대전)")
-                        .font(.custom("NanumSquareB", size: 14))
+                        .font(.custom("NanumSquareB", size: 15))
                 }.textCase(nil)
                     .focused($areaFocused)
                 Section {
                     TextField("", text: $vm.address)
+                        .font(.custom("NanumSquareR", size: 15))
                 } header: {
                     Text("주소")
-                        .font(.custom("NanumSquareB", size: 14))
+                        .font(.custom("NanumSquareB", size: 15))
                 }
                 
                 Section {
                     TextField("", text: $vm.menu)
+                        .font(.custom("NanumSquareR", size: 15))
                         .frame(height: 60, alignment: .top)
                     
                 } header: {
                     Text("기억에 남는 메뉴")
-                        .font(.custom("NanumSquareB", size: 14))
+                        .font(.custom("NanumSquareB", size: 15))
                 }
                 
                 Section {
                     StarButton(star: $vm.star)
                 } header: {
                     Text("별점")
-                        .font(.custom("NanumSquareB", size: 14))
+                        .font(.custom("NanumSquareB", size: 15))
                 }
                 
                 Section {
                     TextField("", text: $vm.review, axis: .vertical)
+                        .font(.custom("NanumSquareR", size: 15))
                         .frame(height: 80, alignment: .top)
                         .multilineTextAlignment(.leading)
                     
                 } header: {
                     Text("한줄평")
-                        .font(.custom("NanumSquareB", size: 14))
+                        .font(.custom("NanumSquareB", size: 15))
                 }
-                
                 
                 Section {
                     HStack {
@@ -117,7 +121,7 @@ struct NewPlaceView: View {
                 } header: {
                     VStack(alignment: .leading) {
                         Text("맛있게 먹은 사진을 올려주세요!")
-                            .font(.custom("NanumSquareB", size: 14))
+                            .font(.custom("NanumSquareB", size: 15))
                     }
                 }
                 Section {
@@ -145,7 +149,7 @@ struct NewPlaceView: View {
                             Text("저장")
                                 .font(.custom("NanumSquareB", size: 18))
                                 .foregroundColor(Color.white)
-                                .frame(width: 270, height: 60)
+                                .frame(width: 300, height: 60)
                                 .background(Color("SecondaryGreen"))
                                 .cornerRadius(30)
                         }

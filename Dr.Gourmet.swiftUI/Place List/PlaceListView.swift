@@ -34,23 +34,33 @@ struct PlaceListView: View {
                                                 places: $vm.places, place: item)
                                             PlaceDetailView(vm: vm)
                                         } label: {
-                                            PlaceCell(place: item)
-                                                
+                                            PlaceCell(place: item)               
                                         }
                                     }
                                 }
                             }
                         } header: {
-                            Button {
-                                print("---> header clicked: \(key)")
-                            } label: {
-                                HStack(spacing: 0) {
-                                    Text(key)
-                                        .font(.custom("HancomMalangMalang-Bold", size: 19))
-                                        .padding(10)
-                                    Image(systemName: "chevron.right")
-                                }.foregroundColor(Color.black)
-                            }
+                            HStack(spacing: 8) {
+                                Image("sharpFlagIcon")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(height: 25)
+                                    .foregroundColor(Color("SecondaryOrange"))
+                                    .fontWeight(.bold)
+                                Text(key)
+                                    .font(.custom("HancomMalangMalang-Bold", size: 20))
+                            }.foregroundColor(Color.black)
+                                .padding(EdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5))
+//                            Button {
+//                                print("---> header clicked: \(key)")
+//                            } label: {
+//                                HStack(spacing: 0) {
+//                                    Text(key)
+//                                        .font(.custom("HancomMalangMalang-Bold", size: 19))
+//                                        .padding(10)
+//                                    Image(systemName: "chevron.right")
+//                                }.foregroundColor(Color.black)
+//                            }
                         }
                     }
                     .onAppear{
@@ -59,8 +69,6 @@ struct PlaceListView: View {
                 }
             }
         }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-        
-        //            .navigationTitle(("쩝쩝박사"))
     }
 }
 

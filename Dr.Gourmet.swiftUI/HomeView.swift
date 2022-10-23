@@ -26,10 +26,11 @@ struct HomeView: View {
                         Image(systemName: "plus.app.fill")
                     }
                     .tag(2)
-                Text("설정 페이지")
+                SettingView()
                     .tabItem {
                         Image(systemName: "gearshape")
                     }
+                    .tag(3)
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {

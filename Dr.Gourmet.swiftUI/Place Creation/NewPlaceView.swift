@@ -147,7 +147,7 @@ struct NewPlaceView: View {
                             
                         } label: {
                             Text("저장")
-                                .font(.custom("NanumSquareB", size: 18))
+                                .font(.custom("NanumSquareB", size: 17))
                                 .foregroundColor(Color.white)
                                 .frame(width: 300, height: 60)
                                 .background(Color("SecondaryGreen"))

@@ -21,7 +21,6 @@ struct PlaceListView: View {
             ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: layout, alignment: .leading) {
                     ForEach(vm.keys, id:\.self) { key in
-                        Divider()
                         Section {
                             let items = vm.dic[key] ?? []
                             let orderedItems = items.sorted(by: {$0.regDate > $1.regDate})
@@ -62,13 +61,16 @@ struct PlaceListView: View {
 //                                }.foregroundColor(Color.black)
 //                            }
                         }
+                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 5, trailing: 10))
+                        Divider()
+                        
                     }
                     .onAppear{
                         vm.getPlaceData()
                     }
                 }
             }
-        }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+        }.padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
     }
 }
 

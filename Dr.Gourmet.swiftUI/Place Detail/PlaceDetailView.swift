@@ -125,7 +125,7 @@ struct PlaceDetailView: View {
                 
             }.foregroundColor(Color("LightGray"))
                 .frame(alignment: .center)
-                .font(.custom("NanumSquareR", size: 13))
+                .font(.custom("NanumSquareR", size: 12))
                 .padding(.bottom, 10)
             
         }.toolbarBackground(

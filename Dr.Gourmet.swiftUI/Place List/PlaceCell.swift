@@ -10,34 +10,35 @@ import SwiftUI
 struct PlaceCell: View {
     
     var place: Place
+    let imageWidth: CGFloat = 140
+    let imageHeight: CGFloat = 190
+    let cornerRadius: CGFloat = 10
     
     var body: some View {
         if let image = loadImageFromDocumentDirectory(imageName: "\(place.id).png") {
             Image(uiImage: image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 165, height: 165)
+                .frame(width: imageWidth, height: imageHeight)
                 .overlay(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6536279966)), Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0))]), startPoint: .bottom, endPoint: .top))
                 .overlay(
                     Text(place.name)
                         .foregroundColor(Color.white)
-                        .font(.custom("NanumSquareEB", size: 18))
+                        .font(.custom("NanumSquareEB", size: 17))
+                        .frame(maxWidth: 100)
                     ,
                     alignment: .center
                 )
-                .cornerRadius(15.0)
+                .cornerRadius(cornerRadius)
         } else {
-
             ZStack {
-                RoundedRectangle(cornerRadius: 15)
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .foregroundColor(Color("DividerColor"))
-                    .frame(width: 165, height: 165)
-
+                    .frame(width: imageWidth, height: imageHeight)
                 Text(place.name)
                     .foregroundColor(Color("LabelColor"))
                     .font(.custom("NanumSquareB", size: 18))
             }
-            
         }
     }
     
@@ -54,7 +55,6 @@ struct PlaceCell: View {
              // 3. UIImage로 불러오기
              return UIImage(contentsOfFile: imageURL.path)
          }
-         
          return nil
      }
 }

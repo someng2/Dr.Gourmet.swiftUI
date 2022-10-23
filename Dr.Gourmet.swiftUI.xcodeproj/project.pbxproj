@@ -25,6 +25,8 @@
 		3DB3CD2728F692100030F3A3 /* NewPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3CD2628F692100030F3A3 /* NewPlaceView.swift */; };
 		3DB3CD2928F695060030F3A3 /* NewPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3CD2828F695060030F3A3 /* NewPlaceModel.swift */; };
 		3DB3CD2C28F6AA6B0030F3A3 /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3CD2B28F6AA6B0030F3A3 /* StarButton.swift */; };
+		3DCFB1452903CA98004AE61E /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFB1442903CA98004AE61E /* SettingView.swift */; };
+		3DCFB1482903DA0D004AE61E /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFB1472903DA0D004AE61E /* FeedbackView.swift */; };
 		3DE9B536290047FC00578BAE /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE9B535290047FC00578BAE /* NanumSquareEB.ttf */; };
 		3DE9B537290047FC00578BAE /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE9B535290047FC00578BAE /* NanumSquareEB.ttf */; };
 		3DE9B538290047FC00578BAE /* NanumSquareEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE9B535290047FC00578BAE /* NanumSquareEB.ttf */; };
@@ -40,6 +42,7 @@
 		3DFF99F42902C7030023D772 /* HancomMalangMalang-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DFF99F32902C7030023D772 /* HancomMalangMalang-Bold.ttf */; };
 		3DFF99F52902C7030023D772 /* HancomMalangMalang-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DFF99F32902C7030023D772 /* HancomMalangMalang-Bold.ttf */; };
 		3DFF99F62902C7030023D772 /* HancomMalangMalang-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DFF99F32902C7030023D772 /* HancomMalangMalang-Bold.ttf */; };
+		3DFF99FC2902CD690023D772 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF99FB2902CD690023D772 /* LaunchView.swift */; };
 		A75D2A2BEEAB5970BDED0363 /* Pods_Dr_Gourmet_swiftUI_Dr_Gourmet_swiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8EA94E5260AC10217D0FBA /* Pods_Dr_Gourmet_swiftUI_Dr_Gourmet_swiftUIUITests.framework */; };
 		EDFAD697D106BD08D5CE9332 /* Pods_Dr_Gourmet_swiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E00AB54C7B1190469FB3F7 /* Pods_Dr_Gourmet_swiftUI.framework */; };
 /* End PBXBuildFile section */
@@ -84,12 +87,15 @@
 		3DB3CD2628F692100030F3A3 /* NewPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceView.swift; sourceTree = "<group>"; };
 		3DB3CD2828F695060030F3A3 /* NewPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceModel.swift; sourceTree = "<group>"; };
 		3DB3CD2B28F6AA6B0030F3A3 /* StarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		3DCFB1442903CA98004AE61E /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		3DCFB1472903DA0D004AE61E /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
 		3DE9B535290047FC00578BAE /* NanumSquareEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareEB.ttf; path = "../../../../Fonts/nanum-square/NanumSquareEB.ttf"; sourceTree = "<group>"; };
 		3DF7D5B528FBDCB00046ACCC /* Dr-Gourmet-swiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Dr-Gourmet-swiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3DFED59D28FFE6F200693204 /* Jalnan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jalnan.ttf; sourceTree = "<group>"; };
 		3DFED59E28FFE70D00693204 /* NanumSquareR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareR.ttf; path = "../../../../Fonts/nanum-square/NanumSquareR.ttf"; sourceTree = "<group>"; };
 		3DFED5A228FFE75800693204 /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareB.ttf; path = "../../../../Fonts/nanum-square/NanumSquareB.ttf"; sourceTree = "<group>"; };
 		3DFF99F32902C7030023D772 /* HancomMalangMalang-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HancomMalangMalang-Bold.ttf"; path = "../../../../Fonts/Hancom MalangMalang/HancomMalangMalang-Bold.ttf"; sourceTree = "<group>"; };
+		3DFF99FB2902CD690023D772 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		3EF184D626141D4605A752E0 /* Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests/Pods-Dr.Gourmet.swiftUI-Dr.Gourmet.swiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		440A3655FECAA7E04F0EE939 /* Pods-Dr.Gourmet.swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUITests/Pods-Dr.Gourmet.swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AE4A59E92CFE0A96DE3FB8A /* Pods-Dr.Gourmet.swiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUI.release.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 				3D67064628F5CB0C00A84692 /* Place List */,
 				3DB3CD2A28F6950A0030F3A3 /* Place Creation */,
 				3DB3CD2528F675310030F3A3 /* Place Detail */,
+				3DCFB1462903CAA6004AE61E /* Etc. */,
 				3D67064928F5CDB500A84692 /* Model */,
 				3D67061C28F5CA1200A84692 /* Assets.xcassets */,
 				3DFED59C28FFE6F100693204 /* Fonts */,
@@ -242,6 +249,16 @@
 				3DB3CD2828F695060030F3A3 /* NewPlaceModel.swift */,
 			);
 			path = "Place Creation";
+			sourceTree = "<group>";
+		};
+		3DCFB1462903CAA6004AE61E /* Etc. */ = {
+			isa = PBXGroup;
+			children = (
+				3DFF99FB2902CD690023D772 /* LaunchView.swift */,
+				3DCFB1442903CA98004AE61E /* SettingView.swift */,
+				3DCFB1472903DA0D004AE61E /* FeedbackView.swift */,
+			);
+			path = Etc.;
 			sourceTree = "<group>";
 		};
 		3DFED59C28FFE6F100693204 /* Fonts */ = {
@@ -527,12 +544,15 @@
 				3D1A978928F7103000731D45 /* AppDelegate.swift in Sources */,
 				3D67064528F5CAB600A84692 /* PlaceListViewModel.swift in Sources */,
 				3DB3CD2228F6733E0030F3A3 /* PlaceDetailViewModel.swift in Sources */,
+				3DCFB1452903CA98004AE61E /* SettingView.swift in Sources */,
+				3DFF99FC2902CD690023D772 /* LaunchView.swift in Sources */,
 				3DB3CD2928F695060030F3A3 /* NewPlaceModel.swift in Sources */,
 				3DB3CD2728F692100030F3A3 /* NewPlaceView.swift in Sources */,
 				3D67064328F5CA4600A84692 /* PlaceListView.swift in Sources */,
 				3DB3CD2428F674CF0030F3A3 /* PlaceDetailView.swift in Sources */,
 				3D67061B28F5CA1100A84692 /* HomeView.swift in Sources */,
 				3D67061928F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift in Sources */,
+				3DCFB1482903DA0D004AE61E /* FeedbackView.swift in Sources */,
 				3D67064828F5CD5600A84692 /* Place.swift in Sources */,
 				3D67064B28F5D36A00A84692 /* PlaceCell.swift in Sources */,
 				3DB3CD2C28F6AA6B0030F3A3 /* StarButton.swift in Sources */,

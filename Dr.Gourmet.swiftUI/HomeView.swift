@@ -9,11 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @StateObject var vm: PlaceListViewModel
+    @ObservedObject var vm: PlaceListViewModel
     @State private var tabSelection = 1
     
     var body: some View {
-        NavigationView {
             TabView(selection: $tabSelection) {
                 PlaceListView(vm: vm)
                     .tabItem {
@@ -27,21 +26,25 @@ struct HomeView: View {
                         Image(systemName: "plus.app.fill")
                     }
                     .tag(2)
-                Text("설정 페이지")
+                SettingView()
                     .tabItem {
                         Image(systemName: "gearshape")
                     }
+                    .tag(3)
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HStack(alignment: .center) {
                         Text("쩝쩝").font(.custom("Jalnan", size: 20))
+                            .foregroundColor(.black)
                         Image("circleAppLogo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(maxHeight: .infinity)
                         Text("박사").font(.custom("Jalnan", size: 20))
-                    }.padding(EdgeInsets(top: 0, leading: 0, bottom: 2, trailing: 0))
+                            .foregroundColor(.black)
+                    }
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 2, trailing: 0))
                 }
             }
             .accentColor(Color("PrimaryColor"))
@@ -52,7 +55,7 @@ struct HomeView: View {
             .toolbarBackground(.visible, for: .navigationBar)
             
         }
-    }
+
 }
 
 struct HomeView_Previews: PreviewProvider {

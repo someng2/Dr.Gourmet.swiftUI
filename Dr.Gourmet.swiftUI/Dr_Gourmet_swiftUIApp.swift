@@ -14,8 +14,8 @@ struct Dr_Gourmet_swiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView(vm: PlaceListViewModel())
-//            PlaceListView(vm: PlaceListViewModel(places: []))
+            LaunchView(vm: PlaceListViewModel())
+            
         }
     }
 }

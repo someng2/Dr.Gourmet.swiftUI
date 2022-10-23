@@ -25,7 +25,7 @@ struct PlaceDetailView: View {
                                 .scaledToFit()
                                 .cornerRadius(15)
                                 .frame(height: 230, alignment: .center)
-                                .padding(EdgeInsets(top: 35, leading: 35, bottom: 0, trailing: 35))
+                                .padding(EdgeInsets(top: 30, leading: 20, bottom: 0, trailing: 20))
                             Spacer()
                         }
                     }
@@ -73,12 +73,12 @@ struct PlaceDetailView: View {
                                     .frame(width: 23)
                                 Spacer().frame(width: 13)
                                 Text("추천 메뉴")
-                                    .font(.custom("HancomMalangMalang-Bold", size: 17))
+                                    .font(.custom("HancomMalangMalang-Bold", size: 18))
                                     .frame(alignment: .leading)
                             }
                             Spacer().frame(height: 15)
                             Text(vm.place.menu)
-                                .font(.custom("NanumSquareR", size: 15))
+                                .font(.custom("NanumSquareR", size: 16))
                                 .padding(.leading, 36)
                             Spacer().frame(height: 30)
                         }
@@ -91,13 +91,13 @@ struct PlaceDetailView: View {
                                     .frame(width: 23)
                                 Spacer().frame(width: 13)
                                 Text("리뷰")
-                                    .font(.custom("HancomMalangMalang-Bold", size: 17))
+                                    .font(.custom("HancomMalangMalang-Bold", size: 18))
                             }
                             
                             Spacer().frame(height: 15)
                             
                             Text(vm.place.review)
-                                .font(.custom("NanumSquareR", size: 15))
+                                .font(.custom("NanumSquareR", size: 16))
                                 .padding(.leading, 36)
                         }
                     }.padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 30))
@@ -157,45 +157,37 @@ struct PlaceDetailView: View {
             VStack {
                 Spacer()
                 Button {
-                    
-
-//                    DispatchQueue.main.async {
-                        vm.deletePlaceData()
-//                    }
+                    vm.deletePlaceData()
                     presentPopup = false
                     self.presentationMode.wrappedValue.dismiss()
-                    
                 } label: {
                     Text("삭제")
-                        .font(.system(size: 16))
-                        .foregroundColor(Color("SecondaryOrange"))
-                        .frame(maxWidth: .infinity, maxHeight: 45)
+                        .font(.custom("NanumSquareB", size: 16))
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity, maxHeight: 60)
                 }
                 .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.white)
-                        .shadow(color: .gray, radius: 2, x: 1, y: 2))
+                    RoundedRectangle(cornerRadius: 30)
+                        .fill(Color("SecondaryOrange"))
+                )
                 Spacer().frame(height: 10)
                 Button {
                     presentPopup = false
                 } label: {
                     Text("취소")
-                        .font(.system(size: 16))
-                        .foregroundColor(Color("LightGray"))
-                        .frame(maxWidth: .infinity, maxHeight: 45)
+                        .font(.custom("NanumSquareB", size: 16))
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity, maxHeight: 60)
                 }
-                
                 .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.white)
-                        .shadow(color: .gray, radius: 2, x: 1, y: 2))
+                    RoundedRectangle(cornerRadius: 30)
+                        .fill(Color("LightGray"))
+                )
                 Spacer()
             }
-            .padding(EdgeInsets(top: 15, leading: 20, bottom: 0, trailing: 20))
-            .presentationDetents([.fraction(0.18)])     // bottom 15% of the screen:
-            
+            .padding(EdgeInsets(top: 10, leading: 20, bottom: 0, trailing: 20))
+            .presentationDetents([.fraction(0.2)])     // bottom 20% of the screen:
         }
-        
     }
 }
 

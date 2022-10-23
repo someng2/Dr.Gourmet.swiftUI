@@ -17,17 +17,7 @@ class MyAppDelegate: NSObject, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
-//        let config = Realm.Configuration(
-//             schemaVersion: 1,
-//                migrationBlock: { migration, oldSchemaVersion in
-//                if (oldSchemaVersion < 1) {
-//                    // Nothing to do!
-//                    // Realm will automatically detect new properties and removed properties
-//                    // And will update the schema on disk automatically
-//                }
-//        })
-//        Realm.Configuration.defaultConfiguration = config
-//        let realm = try! Realm()
+
         
         return true
     }

@@ -10,6 +10,8 @@
 		03339ABB17648315AE5D3624 /* Pods_Dr_Gourmet_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF7FF70DEA53A433B62392F /* Pods_Dr_Gourmet_swiftUITests.framework */; };
 		3D1A978928F7103000731D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A978828F7103000731D45 /* AppDelegate.swift */; };
 		3D46E2E829062B9E00F06C2E /* HancomMalangMalang-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D46E2E729062B9E00F06C2E /* HancomMalangMalang-Regular.ttf */; };
+		3D46E2EE290634DC00F06C2E /* AlertMessage in Frameworks */ = {isa = PBXBuildFile; productRef = 3D46E2ED290634DC00F06C2E /* AlertMessage */; };
+		3D46E2F02906350800F06C2E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46E2EF2906350800F06C2E /* ImagePicker.swift */; };
 		3D67061928F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */; };
 		3D67061B28F5CA1100A84692 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061A28F5CA1100A84692 /* HomeView.swift */; };
 		3D67061D28F5CA1200A84692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D67061C28F5CA1200A84692 /* Assets.xcassets */; };
@@ -69,6 +71,7 @@
 		29693C5A3DDAFE2AF04970DC /* Pods-Dr.Gourmet.swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUITests/Pods-Dr.Gourmet.swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D1A978828F7103000731D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D46E2E729062B9E00F06C2E /* HancomMalangMalang-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HancomMalangMalang-Regular.ttf"; path = "../../../../Fonts/Hancom MalangMalang/HancomMalangMalang-Regular.ttf"; sourceTree = "<group>"; };
+		3D46E2EF2906350800F06C2E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3D4827FB28F7F5CB0079F67E /* Dr.Gourmet.swiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dr.Gourmet.swiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
 		3D67061528F5CA1100A84692 /* Dr.Gourmet.swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dr.Gourmet.swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIApp.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDFAD697D106BD08D5CE9332 /* Pods_Dr_Gourmet_swiftUI.framework in Frameworks */,
+				3D46E2EE290634DC00F06C2E /* AlertMessage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				3DB3CD2628F692100030F3A3 /* NewPlaceView.swift */,
+				3D46E2EF2906350800F06C2E /* ImagePicker.swift */,
 				3DB3CD2B28F6AA6B0030F3A3 /* StarButton.swift */,
 				3DB3CD2828F695060030F3A3 /* NewPlaceModel.swift */,
 			);
@@ -297,7 +302,7 @@
 				3D67061128F5CA1100A84692 /* Sources */,
 				3D67061228F5CA1100A84692 /* Frameworks */,
 				3D67061328F5CA1100A84692 /* Resources */,
-				FB6B303711878B599C1B39C7 /* [CP] Embed Pods Frameworks */,
+				02DA34F11992866509300CF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +310,7 @@
 			);
 			name = Dr.Gourmet.swiftUI;
 			packageProductDependencies = (
+				3D46E2ED290634DC00F06C2E /* AlertMessage */,
 			);
 			productName = Dr.Gourmet.swiftUI;
 			productReference = 3D67061528F5CA1100A84692 /* Dr.Gourmet.swiftUI.app */;
@@ -337,7 +343,7 @@
 				3D67062B28F5CA1200A84692 /* Sources */,
 				3D67062C28F5CA1200A84692 /* Frameworks */,
 				3D67062D28F5CA1200A84692 /* Resources */,
-				18236DF9302EC2116EC2E8F0 /* [CP] Embed Pods Frameworks */,
+				0C1A5487ACEEC3BADEDA1F46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,6 +389,7 @@
 			);
 			mainGroup = 3D67060C28F5CA1100A84692;
 			packageReferences = (
+				3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage" */,
 			);
 			productRefGroup = 3D67061628F5CA1100A84692 /* Products */;
 			projectDirPath = "";
@@ -438,7 +445,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18236DF9302EC2116EC2E8F0 /* [CP] Embed Pods Frameworks */ = {
+		02DA34F11992866509300CF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C1A5487ACEEC3BADEDA1F46 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,23 +545,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB6B303711878B599C1B39C7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dr.Gourmet.swiftUI/Pods-Dr.Gourmet.swiftUI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -558,6 +565,7 @@
 				3D67061928F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift in Sources */,
 				3DCFB1482903DA0D004AE61E /* FeedbackView.swift in Sources */,
 				3D67064828F5CD5600A84692 /* Place.swift in Sources */,
+				3D46E2F02906350800F06C2E /* ImagePicker.swift in Sources */,
 				3D67064B28F5D36A00A84692 /* PlaceCell.swift in Sources */,
 				3DB3CD2C28F6AA6B0030F3A3 /* StarButton.swift in Sources */,
 			);
@@ -899,6 +907,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielkmarks23/AlertMessage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D46E2ED290634DC00F06C2E /* AlertMessage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage" */;
+			productName = AlertMessage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D67060D28F5CA1100A84692 /* Project object */;
 }

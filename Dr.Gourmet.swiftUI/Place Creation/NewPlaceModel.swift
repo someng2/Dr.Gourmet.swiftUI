@@ -142,7 +142,7 @@ final class NewPlaceModel: ObservableObject {
         }
     }
     
-    func save(imageData: Data) {
+    func save(image: UIImage) {
         if place.name.isEmpty {
 //            showingPopup = true
            
@@ -160,8 +160,8 @@ final class NewPlaceModel: ObservableObject {
         do {
             try realm.write{
                 realm.add(place)
-                if imageData != Data() {
-                    saveImageToDocumentDirectory(imageName: "\(place.id).png", image: UIImage(data: imageData)!)
+                if image != UIImage() {
+                    saveImageToDocumentDirectory(imageName: "\(place.id).png", image: image)
                 }
             }
         } catch let error{

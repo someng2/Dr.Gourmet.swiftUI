@@ -12,7 +12,7 @@ struct PlaceListView: View {
     @ObservedObject var vm: PlaceListViewModel
     
     let layout: [GridItem] = [
-        GridItem(.flexible()),        
+        GridItem(.flexible()),
     ]
     
     var body: some View {
@@ -33,25 +33,25 @@ struct PlaceListView: View {
                                                 places: $vm.places, place: item)
                                             PlaceDetailView(vm: vm)
                                         } label: {
-                                            PlaceCell(place: item)               
+                                            PlaceCell(place: item)
                                         }
                                     }
                                 }
                             }
                         } header: {
-                            HStack(spacing: 8) {
+                            HStack(spacing: 7) {
                                 Image("sharpFlagIcon")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(height: 25)
+                                    .frame(height: 23)
                                     .foregroundColor(Color("SecondaryOrange"))
                                     .fontWeight(.bold)
                                 Text(key)
-                                    .font(.custom("HancomMalangMalang-Bold", size: 20))
+                                    .font(.custom("HancomMalangMalang-Bold", size: 19))
                             }.foregroundColor(Color.black)
                                 .padding(EdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5))
 //                            Button {
-//                                print("---> header clicked: \(key)")
+//                                print("—> header clicked: \(key)")
 //                            } label: {
 //                                HStack(spacing: 0) {
 //                                    Text(key)

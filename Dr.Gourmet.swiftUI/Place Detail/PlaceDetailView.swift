@@ -49,7 +49,7 @@ struct PlaceDetailView: View {
                     }
                     Divider().foregroundColor(Color("DividerColor")).padding(EdgeInsets(top: 15, leading: 0, bottom: 15, trailing: 0))
                     if vm.place.address != "" {
-                        HStack {
+                        HStack(alignment: .center) {
                             Image("mapIcon")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -58,14 +58,14 @@ struct PlaceDetailView: View {
                             
                             Spacer().frame(width: 15)
                             Text(vm.place.address)
-                                .font(.custom("NanumSquareR", size: 16))
+                                .font(.custom("NanumSquareR", size: 15))
                                 .foregroundColor(Color("LabelColor"))
                         }.padding(.leading, 20)
                         Divider().foregroundColor(Color("DividerColor")).padding(EdgeInsets(top: 15, leading: 0, bottom: 15, trailing: 0))
                     }
                     VStack(alignment: .leading){
                         if vm.place.menu != "" {
-                            HStack {
+                            HStack(alignment: .center) {
                                 Image(systemName: "fork.knife.circle.fill")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
@@ -73,17 +73,17 @@ struct PlaceDetailView: View {
                                     .frame(width: 23)
                                 Spacer().frame(width: 13)
                                 Text("추천 메뉴")
-                                    .font(.custom("HancomMalangMalang-Bold", size: 18))
+                                    .font(.custom("HancomMalangMalang-Bold", size: 17))
                                     .frame(alignment: .leading)
                             }
                             Spacer().frame(height: 15)
                             Text(vm.place.menu)
-                                .font(.custom("NanumSquareR", size: 16))
+                                .font(.custom("NanumSquareR", size: 15))
                                 .padding(.leading, 36)
                             Spacer().frame(height: 30)
                         }
                         if vm.place.review != "" {
-                            HStack {
+                            HStack(alignment: .center) {
                                 Image(systemName: "message.circle.fill")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
@@ -91,14 +91,15 @@ struct PlaceDetailView: View {
                                     .frame(width: 23)
                                 Spacer().frame(width: 13)
                                 Text("리뷰")
-                                    .font(.custom("HancomMalangMalang-Bold", size: 18))
+                                    .font(.custom("HancomMalangMalang-Bold", size: 17))
                             }
                             
                             Spacer().frame(height: 15)
                             
                             Text(vm.place.review)
-                                .font(.custom("NanumSquareR", size: 16))
+                                .font(.custom("NanumSquareR", size: 15))
                                 .padding(.leading, 36)
+                                .lineSpacing(5)
                         }
                     }.padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 30))
                 }.foregroundColor(Color("LabelColor"))

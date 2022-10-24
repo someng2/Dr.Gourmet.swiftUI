@@ -100,11 +100,11 @@ struct PlaceDetailView: View {
                                 .font(.custom("NanumSquareR", size: 15))
                                 .padding(.leading, 36)
                                 .lineSpacing(5)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                                
                         }
-                    }.padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 30))
+                    }.padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                 }.foregroundColor(Color("LabelColor"))
-                
-                
             }
             
             .navigationBarTitleDisplayMode(.inline)

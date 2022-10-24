@@ -389,7 +389,7 @@
 			);
 			mainGroup = 3D67060C28F5CA1100A84692;
 			packageReferences = (
-				3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage.git" */,
+				3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage" */,
 			);
 			productRefGroup = 3D67061628F5CA1100A84692 /* Products */;
 			projectDirPath = "";
@@ -735,6 +735,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = L;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -770,6 +771,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = L;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -909,7 +911,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage.git" */ = {
+		3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielkmarks23/AlertMessage.git";
 			requirement = {
@@ -922,7 +924,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		3D46E2ED290634DC00F06C2E /* AlertMessage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage.git" */;
+			package = 3D46E2EC290634DC00F06C2E /* XCRemoteSwiftPackageReference "AlertMessage" */;
 			productName = AlertMessage;
 		};
 /* End XCSwiftPackageProductDependency section */

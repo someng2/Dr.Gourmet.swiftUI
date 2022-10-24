@@ -24,7 +24,7 @@ struct PlaceCell: View {
                 .overlay(
                     Text(place.name)
                         .foregroundColor(Color.white)
-                        .font(.custom("NanumSquareEB", size: 17))
+                        .font(.custom("HancomMalangMalang-Regular", size: 17))
                         .frame(maxWidth: 100)
                     ,
                     alignment: .center
@@ -37,7 +37,7 @@ struct PlaceCell: View {
                     .frame(width: imageWidth, height: imageHeight)
                 Text(place.name)
                     .foregroundColor(Color("LabelColor"))
-                    .font(.custom("NanumSquareB", size: 18))
+                    .font(.custom("HancomMalangMalang-Regular", size: 17))
             }
         }
     }

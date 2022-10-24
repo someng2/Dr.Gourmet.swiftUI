@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03339ABB17648315AE5D3624 /* Pods_Dr_Gourmet_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF7FF70DEA53A433B62392F /* Pods_Dr_Gourmet_swiftUITests.framework */; };
 		3D1A978928F7103000731D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A978828F7103000731D45 /* AppDelegate.swift */; };
+		3D46E2E829062B9E00F06C2E /* HancomMalangMalang-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D46E2E729062B9E00F06C2E /* HancomMalangMalang-Regular.ttf */; };
 		3D67061928F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */; };
 		3D67061B28F5CA1100A84692 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67061A28F5CA1100A84692 /* HomeView.swift */; };
 		3D67061D28F5CA1200A84692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D67061C28F5CA1200A84692 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 /* Begin PBXFileReference section */
 		29693C5A3DDAFE2AF04970DC /* Pods-Dr.Gourmet.swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Gourmet.swiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Dr.Gourmet.swiftUITests/Pods-Dr.Gourmet.swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D1A978828F7103000731D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D46E2E729062B9E00F06C2E /* HancomMalangMalang-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HancomMalangMalang-Regular.ttf"; path = "../../../../Fonts/Hancom MalangMalang/HancomMalangMalang-Regular.ttf"; sourceTree = "<group>"; };
 		3D4827FB28F7F5CB0079F67E /* Dr.Gourmet.swiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dr.Gourmet.swiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
 		3D67061528F5CA1100A84692 /* Dr.Gourmet.swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dr.Gourmet.swiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D67061828F5CA1100A84692 /* Dr_Gourmet_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_Gourmet_swiftUIApp.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			children = (
 				3DFED59E28FFE70D00693204 /* NanumSquareR.ttf */,
 				3DFF99F32902C7030023D772 /* HancomMalangMalang-Bold.ttf */,
+				3D46E2E729062B9E00F06C2E /* HancomMalangMalang-Regular.ttf */,
 				3DE9B535290047FC00578BAE /* NanumSquareEB.ttf */,
 				3DFED5A228FFE75800693204 /* NanumSquareB.ttf */,
 				3DFED59D28FFE6F200693204 /* Jalnan.ttf */,
@@ -404,6 +407,7 @@
 				3DFED59F28FFE70D00693204 /* NanumSquareR.ttf in Resources */,
 				3DFED5A328FFE75800693204 /* NanumSquareB.ttf in Resources */,
 				3D67061D28F5CA1200A84692 /* Assets.xcassets in Resources */,
+				3D46E2E829062B9E00F06C2E /* HancomMalangMalang-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

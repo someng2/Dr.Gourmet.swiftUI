@@ -113,7 +113,7 @@ struct NewPlaceView: View {
                             .frame(height: 230, alignment: .center)
                         Spacer()
                     }
-
+                    
                 } header: {
                     VStack(alignment: .leading) {
                         Text("맛있게 먹은 사진을 올려주세요!")
@@ -202,16 +202,16 @@ struct NewPlaceView: View {
             .scrollContentBackground(.hidden)
             Spacer()
         }.onAppear{
+            
             checkAlbumPermission()
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 nameFocused = true
             }
         }.background(Color.gray.opacity(0.2))
-        
     }
     
     func checkAlbumPermission(){
-        PHPhotoLibrary.requestAuthorization( { status in
+        PHPhotoLibrary.requestAuthorization(for: .readWrite) { (status) in
             switch status{
             case .authorized:
                 print("Album: 권한 허용")
@@ -222,7 +222,7 @@ struct NewPlaceView: View {
             default:
                 break
             }
-        })
+        }
     }
     
     func PhotoAuth() -> Bool {
@@ -263,26 +263,26 @@ struct NewPlaceView: View {
             
             let viewController = UIApplication.shared.windows.first!.rootViewController!
             viewController.present(alert, animated: true) {
-
-//                if PhotoAuth() {
-//                    showPhotoLibrary = true
-//                    hideKeyboard()
-//                }
+                
+                //                if PhotoAuth() {
+                //                    showPhotoLibrary = true
+                //                    hideKeyboard()
+                //                }
             }
             
         }
     }
 }
-    
-    extension View {
-        func hideKeyboard() {
-            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-        }
+
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
-    
-    struct NewPlaceView_Previews: PreviewProvider {
-        static var previews: some View {
-            NewPlaceView(vm: NewPlaceModel(places: .constant([]), tabSelection: .constant(2)))
-        }
+}
+
+struct NewPlaceView_Previews: PreviewProvider {
+    static var previews: some View {
+        NewPlaceView(vm: NewPlaceModel(places: .constant([]), tabSelection: .constant(2)))
     }
+}
 

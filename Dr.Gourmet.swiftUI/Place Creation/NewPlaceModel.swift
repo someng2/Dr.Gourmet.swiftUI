@@ -22,7 +22,6 @@ final class NewPlaceModel: ObservableObject {
     @Published var review: String  = ""// 한줄평
     @Published var menu: String = ""
     
-//    @Published var showingPopup: Bool = false
     @Binding var tabSelection: Int
     
     var subscriptions = Set<AnyCancellable>()
@@ -143,12 +142,7 @@ final class NewPlaceModel: ObservableObject {
     }
     
     func save(image: UIImage) {
-        if place.name.isEmpty {
-//            showingPopup = true
-           
-            return
-        }
-//        guard place.name.isEmpty == false else { return }
+        guard place.name.isEmpty == false else { return }
         guard place.area.isEmpty == false else { return }
         
         let formatter = DateFormatter()

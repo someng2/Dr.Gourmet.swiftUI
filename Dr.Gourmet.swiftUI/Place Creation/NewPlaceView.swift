@@ -16,8 +16,6 @@ struct NewPlaceView: View {
     @StateObject var vm: NewPlaceModel
     
     @State private var selectedItem: PhotosPickerItem? = nil
-    
-    
     @State private var selectedImage = UIImage()
     @State private var showPhotoLibrary = false
     
@@ -137,6 +135,7 @@ struct NewPlaceView: View {
                             else {
                                 vm.save(image: selectedImage)
                                 nameFocused = true
+                                selectedImage = UIImage()
                                 //  self.tabSelection = 1
                             }
                             
@@ -154,7 +153,6 @@ struct NewPlaceView: View {
                 }
                 .listRowBackground(Color(UIColor.clear))
                 .background(.clear)
-                
                 
             }
             .alertMessage(isPresented: $showNameSnackbar, type: .centered, autoHideIn: 1.5) {

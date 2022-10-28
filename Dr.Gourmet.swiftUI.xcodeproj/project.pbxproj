@@ -734,6 +734,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dr-Gourmet-swiftUI-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "쩝쩝박사";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Album permissions to upload image of food";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -746,7 +748,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meng.DrGourmet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Dr.Gourmet.swiftUI/Dr.Gourmet.swiftUI-Bridging-Header.h";
@@ -770,6 +772,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dr-Gourmet-swiftUI-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "쩝쩝박사";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Album permissions to upload image of food";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -782,7 +786,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.meng.Dr-Gourmet-swiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meng.DrGourmet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Dr.Gourmet.swiftUI/Dr.Gourmet.swiftUI-Bridging-Header.h";

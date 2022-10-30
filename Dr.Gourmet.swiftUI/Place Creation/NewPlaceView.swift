@@ -19,10 +19,14 @@ struct NewPlaceView: View {
     @State private var selectedImage = UIImage()
     @State private var showPhotoLibrary = false
     
-    @FocusState var nameFocused: Bool
-    @FocusState var areaFocused: Bool
+    @FocusState private var focusField: Field?
+    
     @State var showNameSnackbar: Bool = false
     @State var showAreaSnackbar: Bool = false
+    
+    enum Field: Hashable {
+      case name, area, review
+    }
     
     var body: some View {
         VStack {
@@ -30,19 +34,20 @@ struct NewPlaceView: View {
                 Section {
                     TextField("", text: $vm.name)
                         .font(.custom("NanumSquareR", size: 15))
+                        .focused($focusField, equals: .name)
                 } header: {
                     Text("상호명")
                         .font(.custom("NanumSquareB", size: 15))
                 }
-                .focused($nameFocused)
+                
                 Section {
                     TextField("", text: $vm.area)
                         .font(.custom("NanumSquareR", size: 15))
+                        .focused($focusField, equals: .area)
                 } header: {
                     Text("지역 (ex: 서울, 대전)")
                         .font(.custom("NanumSquareB", size: 15))
                 }.textCase(nil)
-                    .focused($areaFocused)
                 Section {
                     TextField("", text: $vm.address)
                         .font(.custom("NanumSquareR", size: 15))
@@ -63,6 +68,9 @@ struct NewPlaceView: View {
                 
                 Section {
                     StarButton(star: $vm.star)
+                        .onTapGesture {
+                            focusField = .review
+                        }
                 } header: {
                     Text("별점")
                         .font(.custom("NanumSquareB", size: 15))
@@ -73,6 +81,7 @@ struct NewPlaceView: View {
                         .font(.custom("NanumSquareR", size: 15))
                         .frame(height: 80, alignment: .top)
                         .multilineTextAlignment(.leading)
+                        .focused($focusField, equals: .review)
                     
                 } header: {
                     Text("한줄평")
@@ -124,17 +133,15 @@ struct NewPlaceView: View {
                         Button{
                             if $vm.name.wrappedValue.isEmpty {
                                 showNameSnackbar = true
-                                areaFocused = false
-                                nameFocused = true
+                                focusField = .name
                             }
                             else if $vm.area.wrappedValue.isEmpty {
                                 showAreaSnackbar = true
-                                nameFocused = false
-                                areaFocused = true
+                                focusField = .area
                             }
                             else {
                                 vm.save(image: selectedImage)
-                                nameFocused = true
+                                focusField = nil
                                 selectedImage = UIImage()
                                 //  self.tabSelection = 1
                             }
@@ -200,10 +207,10 @@ struct NewPlaceView: View {
             .scrollContentBackground(.hidden)
             Spacer()
         }.onAppear{
-            
+        
             checkAlbumPermission()
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                nameFocused = true
+                focusField = .name
             }
         }.background(Color.gray.opacity(0.2))
     }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingView: View {
     
-    let version = 1.0
+    let version = "1.0.1"
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -18,7 +18,7 @@ struct SettingView: View {
                     .font(.custom("NanumSquareB", size: 16))
                     .foregroundColor(Color("LabelColor"))
                 Spacer()
-                Text("\(String(format: "%.1f", version))")
+                Text(version)
                     .font(.custom("NanumSquareR", size: 15))
                     .foregroundColor(.gray)
             }

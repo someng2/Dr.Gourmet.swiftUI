@@ -66,7 +66,7 @@ struct PlaceDetailView: View {
                             
                             Spacer()
                             Text("복사")
-                                .font(.custom("NanumSquareB", size: 14))
+                                .font(.custom("NanumSquareB", size: 13))
                                 .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
                                 .foregroundColor(.white)
                                 .background(Color("PrimaryColor"))
@@ -116,7 +116,7 @@ struct PlaceDetailView: View {
                                 .padding(.leading, 36)
                                 .lineSpacing(5)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                                
+                            
                         }
                     }.padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                 }.foregroundColor(Color("LabelColor"))
@@ -151,21 +151,21 @@ struct PlaceDetailView: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton, trailing: deleteButton)
         .present(isPresented: $showToast, type: .floater(), position: .bottom, autohideDuration: 1.3) {
-            createToastView()
+            toastView()
         }
     }
     
-    func createToastView() -> some View {
-            VStack {
-                Text("클립보드에 복사되었습니다.")
-                    .font(.custom("NanumSquareB", size: 14))
-                    .foregroundColor(.white)
-            }
-            .frame(maxWidth: .infinity, maxHeight: 40)
-            .background(Color("LightGray"))
-            .cornerRadius(10)
-            .padding(EdgeInsets(top: 10, leading: 50, bottom: 10, trailing: 50))
+    func toastView() -> some View {
+        VStack {
+            Text("클립보드에 복사되었습니다.")
+                .font(.custom("NanumSquareB", size: 14))
+                .foregroundColor(.white)
         }
+        .frame(maxWidth: .infinity, maxHeight: 40)
+        .background(Color("LightGray"))
+        .cornerRadius(10)
+        .padding(EdgeInsets(top: 10, leading: 50, bottom: 10, trailing: 50))
+    }
     
     var backButton : some View {
         Button(

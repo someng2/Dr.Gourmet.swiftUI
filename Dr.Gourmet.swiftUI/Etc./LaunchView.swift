@@ -31,9 +31,7 @@ struct LaunchView: View {
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                     withAnimation {
-                        
                         self.showingSplash = false
-                        
                     }
                 }
             }

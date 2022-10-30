@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
+import SSToastMessage
 
 struct PlaceDetailView: View {
     
     @StateObject var vm: PlaceDetailViewModel
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var presentPopup = false
+    @State var showToast = false
     
     var body: some View {
         VStack {
@@ -60,7 +63,19 @@ struct PlaceDetailView: View {
                             Text(vm.place.address)
                                 .font(.custom("NanumSquareR", size: 15))
                                 .foregroundColor(Color("LabelColor"))
-                        }.padding(.leading, 20)
+                            
+                            Spacer()
+                            Text("복사")
+                                .font(.custom("NanumSquareB", size: 14))
+                                .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+                                .foregroundColor(.white)
+                                .background(Color("PrimaryColor"))
+                                .cornerRadius(15)
+                                .onTapGesture(count: 1) {
+                                    UIPasteboard.general.string = vm.place.address
+                                    showToast = true
+                                }
+                        }.padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                         Divider().foregroundColor(Color("DividerColor")).padding(EdgeInsets(top: 15, leading: 0, bottom: 15, trailing: 0))
                     }
                     VStack(alignment: .leading){
@@ -135,7 +150,23 @@ struct PlaceDetailView: View {
         .toolbarBackground(.visible, for: .navigationBar)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton, trailing: deleteButton)
+        .present(isPresented: $showToast, type: .floater(), position: .bottom, autohideDuration: 1.3) {
+            createToastView()
+        }
     }
+    
+    func createToastView() -> some View {
+            VStack {
+                Text("클립보드에 복사되었습니다.")
+                    .font(.custom("NanumSquareB", size: 14))
+                    .foregroundColor(.white)
+            }
+            .frame(maxWidth: .infinity, maxHeight: 40)
+            .background(Color("LightGray"))
+            .cornerRadius(10)
+            .padding(EdgeInsets(top: 10, leading: 50, bottom: 10, trailing: 50))
+        }
+    
     var backButton : some View {
         Button(
             action: {

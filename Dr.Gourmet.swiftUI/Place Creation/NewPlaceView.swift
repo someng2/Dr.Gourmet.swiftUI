@@ -25,7 +25,7 @@ struct NewPlaceView: View {
     @State var showAreaSnackbar: Bool = false
     
     enum Field: Hashable {
-      case name, area, review
+        case name, area, menu, review
     }
     
     var body: some View {
@@ -57,9 +57,15 @@ struct NewPlaceView: View {
                 }
                 
                 Section {
-                    TextField("", text: $vm.menu)
+                    TextField("", text: $vm.menu, axis: .vertical)
                         .font(.custom("NanumSquareR", size: 15))
+                        .multilineTextAlignment(.leading)
                         .frame(height: 60, alignment: .top)
+                        .focused($focusField, equals: .menu)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            focusField = .menu
+                        }
                     
                 } header: {
                     Text("기억에 남는 메뉴")
@@ -79,10 +85,13 @@ struct NewPlaceView: View {
                 Section {
                     TextField("", text: $vm.review, axis: .vertical)
                         .font(.custom("NanumSquareR", size: 15))
-                        .frame(height: 80, alignment: .top)
                         .multilineTextAlignment(.leading)
+                        .frame(height: 80, alignment: .top)
                         .focused($focusField, equals: .review)
-                    
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            focusField = .review
+                        }
                 } header: {
                     Text("한줄평")
                         .font(.custom("NanumSquareB", size: 15))
@@ -207,7 +216,7 @@ struct NewPlaceView: View {
             .scrollContentBackground(.hidden)
             Spacer()
         }.onAppear{
-        
+            
             checkAlbumPermission()
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 focusField = .name

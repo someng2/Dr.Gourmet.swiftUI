@@ -384,10 +384,10 @@
 			};
 			buildConfigurationList = 3D67061028F5CA1100A84692 /* Build configuration list for PBXProject "Dr.Gourmet.swiftUI" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				ko,
 				Base,
 			);
 			mainGroup = 3D67060C28F5CA1100A84692;

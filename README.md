@@ -1,4 +1,8 @@
 ### 전국의 쩝쩝박사들을 위한 맛집 기록 앱 🐷🎓
+
+#### AppStore 📲 
+https://apps.apple.com/kr/app/%EC%A9%9D%EC%A9%9D%EB%B0%95%EC%82%AC/id6444056736
+<br/> 
 <br/> 
 
 <image src="https://user-images.githubusercontent.com/96823668/198212066-4f3cbfc4-6ffe-4fa5-b779-ad8aec738f37.png" width="200" height="400"> <image src="https://user-images.githubusercontent.com/96823668/198209667-26702db4-674b-448e-a782-1a5dc02da088.png" width="200" height="400">   <image src="https://user-images.githubusercontent.com/96823668/198210120-6b410beb-0b26-4519-9d5f-bba6bb135089.png" width="200" height="400">  
